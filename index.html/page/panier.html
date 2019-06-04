@@ -4,14 +4,15 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Les métiers du WEB : découvrez les métiers de demain avec Webeo !</title>
-      <meta name="description" content="Bienvenue sur le site qui vous aidera à choisir votre métier du web ! Retrouvez-y formations, articles et vidéos sur les métiers du WEB qui vous interessent !">
+      <title>Webeo et les métiers du web | Panier</title>
+      <meta name="description" content="Bienvenue sur le site qui vous aidera à choisir votre métier du web ! Vous retrouverez ici votre panier.">
       <meta name="keywords" lang="fr" content="metiers, web, formations, Webeo, developpeur, graphiste, integrateur, designer">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
@@ -26,7 +27,7 @@
 
                         <div class="logo">
                       
-                        	<a href="index.html"><img src="../img/logo.png" style="width: 10%;" class="img-responsive"></a>
+                        	<a href="index.html"><img src="../img/logo.png" style="width: 10%;"></a>
                         </div>
 
                         <div class="menu">
@@ -65,60 +66,87 @@
       })
 		</script>
 
-<section class="full-page">
-      <section class="top">
-            <div class="contenu">
-                  <h1>Choisis la formation qui t'intéresse !</h1>
-            </div>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/dev.jpg">
-                  </div>
-                  <h3>Formation Développeur Web</h3>
-                  <p>Le développeur web effectue la réalisation technique et le développement informatique d’un site web. Le développeur web programme les fonctionnalités qui correspondent aux besoins du client pour son site web.</p>
-                  <a class="acheter" href="panier.html"><center>Acheter</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/cm.jpg">
-                  </div>
-                  <h3>Formation Community Manager</h3>
-                  <p>Le community manager est chargé de fédérer une communauté d’internautes autour d’un intérêt commun, tout en veillant au respect des règles de bonne conduite au sein de la communauté.</p>
-                  <a href="panier.html"><center>Acheter</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/design.jpg">
-                  </div>
-                  <h3>Formation Web Designer</h3>
-                  <p>Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia.</p>
-                  <a class="acheter" href="panier.html"><center>Acheter</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/Web-Master.jpg">
-                  </div>
-                  <h3>Formation Web Master</h3>
-                  <p>Le webmestre est responsable d’un site internet ou intranet. Selon la taille de l’organisation et du site web qu’il doit gérer, ses missions seront très différentes.</p>
-                  <a class="acheter" href="panier.html"><center>Acheter</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/graphiste.jpg">
-                  </div>
-                  <h3>Formation Graphiste</h3>
-                  <p>Le graphiste Web est un professionnel de la communication visuelle qui crée les éléments graphiques de sites Internet ou applications mobiles.</p>
-                  <a href="panier.html"><center>Acheter</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/integrateur.jpg">
-                  </div>
-                  <h3>Formation Integrateur web</h3>
-                  <p>L’intégrateur Web est chargé de traduire et de transposer les maquettes fournies par l’équipe graphique dans un langage informatique : les langages HTML et CSS.</p>
-                  <a href="panier.html"><center>Acheter</center></a>
-            </article>
-      </section>
+<section class="full-page2">
+    <article id="articleNews">
+      <div>
+        <h1 align="center">Votre panier</h1><br>
+        <hr id="hr-panier"><br><br>
+      </div>
+
+      <div id="panier">
+          <h2 id="panier-article" >
+               ARTICLE
+          </h2>
+          <h2 id="panier-quantite" >
+               PRIX
+          </h2>
+          <h2 id="prix-panier" >
+               QUANTITE
+          </h2>
+      </div>
+      <div class="input-group plus-minus-input">
+        <div class="input-group-button">
+          <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+            <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+        </div>
+        <input class="input-group-field" type="number" name="quantity" value="0">
+        <div class="input-group-button">
+          <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+
+      <script type="text/javascript">
+jQuery(document).ready(function(){
+    // This button will increment the value
+    $('[data-quantity="plus"]').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('data-field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    // This button will decrement the value till 0
+    $('[data-quantity="minus"]').click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('data-field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+});
+      </script>
+
+
+
+     <div id="contenu-panier">
+      <img src="../img/panier-dev.JPG">
+      <p>59,99€</p>
+     </div>
+    <div class="bouton-paiement">
+      <a class="btn btn-success btn-lg" href="#" role="button">Paiement</a>
+    </div>
 
 
 </section>
@@ -165,7 +193,7 @@
            <div class="footer-contact-box">
             <div class="footer-contact-icon"><i class="fa fa-envelope"></i></div>
             <div class="footer-contact-text">
-              <p><a href="mailto:info@learningtutorialpoingt.com">metiers-du-web@gmail.com</a></p>
+              <p><a href="mailto:info@learningtutorialpoingt.com">info@learningtutorialpoingt.com</a></p>
             </div>
             <div class="clr"></div>
           </div>
@@ -173,7 +201,7 @@
            <div class="footer-contact-box">
             <div class="footer-contact-icon"><i class="fa fa-globe"></i></div>
             <div class="footer-contact-text">
-               <p><a href="http://www.learningtutorialpoint.com">http://www.learningtutorialpoint.com</a></p>
+               <p><a href="http://www.learningtutorialpoint.com">metiers-du-web@gmail.com</a></p>
             </div>
             <div class="clr"></div>
           </div>
@@ -217,8 +245,7 @@
               <div class="loader">
                 <div class="loader-active"></div>
               </div>
-
-    			</section>
+              </section>
 
             </div>
           </div>
@@ -247,10 +274,8 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
-
 
 
 
