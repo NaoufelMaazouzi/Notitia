@@ -4,14 +4,15 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Webeo et les métiers du web | Articles</title>
-      <meta name="description" content="Bienvenue sur le site qui vous aidera à choisir votre métier du web ! Vous retrouverez ici tous les articles concernant les métiers du web.">
+      <title>Webeo et les métiers du web | Panier</title>
+      <meta name="description" content="Bienvenue sur le site qui vous aidera à choisir votre métier du web ! Vous retrouverez ici votre panier.">
       <meta name="keywords" lang="fr" content="metiers, web, formations, Webeo, developpeur, graphiste, integrateur, designer">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
@@ -31,7 +32,7 @@
 
                         <div class="menu">
                               <ul>
-                                    <li><a href="index.html">Accueil</a></li>
+                                    <li><a href="../index.html">Accueil</a></li>
                                     <li><a href="blog.html">Articles</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                     <li><a href="connexion.html">Connexion</a></li>
@@ -65,60 +66,73 @@
       })
 		</script>
 
-<section class="full-page">
-      <section class="top">
-            <div class="contenu">
-                  <h1>Choisis le métier que tu veux découvrir !</h1>
-            </div><<
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/dev.jpg">
-                  </div>
-                  <h3>Développeur Web</h3>
-                  <p>Le développeur web effectue la réalisation technique et le développement informatique d’un site web. Le développeur web programme les fonctionnalités qui correspondent aux besoins du client pour son site web.</p>
-                  <a class="acheter" href="article1.html"><center>Lire</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/cm.jpg">
-                  </div>
-                  <h3>Community Manager</h3>
-                  <p>Le community manager est chargé de fédérer une communauté d’internautes autour d’un intérêt commun, tout en veillant au respect des règles de bonne conduite au sein de la communauté.</p>
-                  <a href="article1.html"><center>Lire</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/design.jpg">
-                  </div>
-                  <h3>Web Designer</h3>
-                  <p>Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia.</p>
-                  <a class="acheter" href="article1.html"><center>Lire</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/Web-Master.jpg">
-                  </div>
-                  <h3>Web Master</h3>
-                  <p>Le webmestre est responsable d’un site internet ou intranet. Selon la taille de l’organisation et du site web qu’il doit gérer, ses missions seront très différentes.</p>
-                  <a class="acheter" href="article1.html"><center>Lire</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/graphiste.jpg">
-                  </div>
-                  <h3>Formation Graphiste</h3>
-                  <p>Le graphiste Web est un professionnel de la communication visuelle qui crée les éléments graphiques de sites Internet ou applications mobiles.</p>
-                  <a href="article1.html"><center>Lire</center></a>
-            </article>
-            <article class="col-4 post">
-                  <div class="picture">
-                        <img src="../img/integrateur.jpg">
-                  </div>
-                  <h3>Integrateur web</h3>
-                  <p>L’intégrateur Web est chargé de traduire et de transposer les maquettes fournies par l’équipe graphique dans un langage informatique : les langages HTML et CSS.</p>
-                  <a href="article1.html"><center>Lire</center></a>
-            </article>
-      </section>
+<section class="full-page2">
+    <article id="articleNews">
+      <div>
+        <h1 align="center">Votre panier</h1><br>
+        <hr id="hr-panier"><br><br>
+      </div>
+
+      <div id="panier">
+          <h2 id="panier-article" >
+               ARTICLE
+          </h2>
+          <h2 id="panier-quantite" >
+               PRIX
+          </h2>
+          <h2 id="prix-panier" >
+               QUANTITE
+          </h2>
+      </div>
+      <div class="input-group plus-minus-input">
+        <div class="input-group-button">
+          <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+            <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+        </div>
+        <input class="input-group-field" type="number" name="quantity" value="0">
+        <div class="input-group-button">
+          <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+
+      <script type="text/javascript">
+jQuery(document).ready(function(){
+    $('[data-quantity="plus"]').click(function(e){
+        e.preventDefault();
+        fieldName = $(this).attr('data-field');
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        if (!isNaN(currentVal)) {
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    $('[data-quantity="minus"]').click(function(e) {
+        e.preventDefault();
+        fieldName = $(this).attr('data-field');
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        if (!isNaN(currentVal) && currentVal > 0) {
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+});
+      </script>
+
+
+
+     <div id="contenu-panier">
+      <img src="../img/panier-dev.JPG">
+      <p>59,99€</p>
+     </div>
+    <div class="bouton-paiement">
+      <a class="btn btn-success btn-lg" href="#" role="button">Paiement</a>
+    </div>
 
 
 </section>
@@ -173,7 +187,7 @@
            <div class="footer-contact-box">
             <div class="footer-contact-icon"><i class="fa fa-globe"></i></div>
             <div class="footer-contact-text">
-               <p><a href="http://www.learningtutorialpoint.com">http://www.learningtutorialpoint.com</a></p>
+               <p><a href="http://www.learningtutorialpoint.com">metiers-du-web@gmail.com</a></p>
             </div>
             <div class="clr"></div>
           </div>
@@ -181,7 +195,7 @@
           <div class="footer-contact-box">
             <div class="footer-contact-icon"><i class="fa fa-globe"></i></div>
             <div class="footer-contact-text">
-               <p><a href="http://www.learningtutorialpoint.com">metiers-du-web@gmail.com</a></p>
+               <p><a href="http://www.learningtutorialpoint.com">http://www.learningtutorialpoint.com</a></p>
             </div>
             <div class="clr"></div>
           </div>
@@ -195,7 +209,7 @@
             <div class="footer-heading"><h2>Quelques liens</h2></div>
             <div class="footer-link">
               <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="../index.html">Accueil</a></li>
                 <li><a href="blog.html">Articles</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="connexion.html">Connexion</a></li>
@@ -217,7 +231,7 @@
               <div class="loader">
                 <div class="loader-active"></div>
               </div>
-          </section>
+              </section>
 
             </div>
           </div>
@@ -246,10 +260,8 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
-
 
 
 

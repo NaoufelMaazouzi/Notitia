@@ -4,20 +4,20 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Webeo et les métiers du web | Panier</title>
-      <meta name="description" content="Bienvenue sur le site qui vous aidera à choisir votre métier du web ! Vous retrouverez ici votre panier.">
+      <title>Webeo et les métiers du web | Développeur web</title>
+      <meta name="description" content="Bienvenue sur le site qui vous aidera à choisir votre métier du web ! Vous retrouverez ici l'article sur les développeurs web.">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Nunito:400,700&display=swap" rel="stylesheet">
       <meta name="keywords" lang="fr" content="metiers, web, formations, Webeo, developpeur, graphiste, integrateur, designer">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
       <div class="wrapper">
-            <header class="header1">
+            <header class="header-developpeur">
 
                   <nav>
 
@@ -32,11 +32,11 @@
 
                         <div class="menu">
                               <ul>
-                                    <li><a href="index.html">Accueil</a></li>
+                                    <li><a href="../index.html">Accueil</a></li>
                                     <li><a href="blog.html">Articles</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                     <li><a href="connexion.html">Connexion</a></li>
-                                    <a href="panier.html" <i class="fas fa-shopping-bag"></i></a>
+                                    <a href="panier.html" <i class="fas fa-shopping-bag" text-decoration="none"></i></a>
                               </ul>
                         </div>
                   </nav>
@@ -66,87 +66,19 @@
       })
 		</script>
 
-<section class="full-page2">
-    <article id="articleNews">
-      <div>
-        <h1 align="center">Votre panier</h1><br>
-        <hr id="hr-panier"><br><br>
-      </div>
-
-      <div id="panier">
-          <h2 id="panier-article" >
-               ARTICLE
-          </h2>
-          <h2 id="panier-quantite" >
-               PRIX
-          </h2>
-          <h2 id="prix-panier" >
-               QUANTITE
-          </h2>
-      </div>
-      <div class="input-group plus-minus-input">
-        <div class="input-group-button">
-          <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
-            <i class="fa fa-minus" aria-hidden="true"></i>
-          </button>
-        </div>
-        <input class="input-group-field" type="number" name="quantity" value="0">
-        <div class="input-group-button">
-          <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-
-
-      <script type="text/javascript">
-jQuery(document).ready(function(){
-    // This button will increment the value
-    $('[data-quantity="plus"]').click(function(e){
-        // Stop acting like a button
-        e.preventDefault();
-        // Get the field name
-        fieldName = $(this).attr('data-field');
-        // Get its current value
-        var currentVal = parseInt($('input[name='+fieldName+']').val());
-        // If is not undefined
-        if (!isNaN(currentVal)) {
-            // Increment
-            $('input[name='+fieldName+']').val(currentVal + 1);
-        } else {
-            // Otherwise put a 0 there
-            $('input[name='+fieldName+']').val(0);
-        }
-    });
-    // This button will decrement the value till 0
-    $('[data-quantity="minus"]').click(function(e) {
-        // Stop acting like a button
-        e.preventDefault();
-        // Get the field name
-        fieldName = $(this).attr('data-field');
-        // Get its current value
-        var currentVal = parseInt($('input[name='+fieldName+']').val());
-        // If it isn't undefined or its greater than 0
-        if (!isNaN(currentVal) && currentVal > 0) {
-            // Decrement one
-            $('input[name='+fieldName+']').val(currentVal - 1);
-        } else {
-            // Otherwise put a 0 there
-            $('input[name='+fieldName+']').val(0);
-        }
-    });
-});
-      </script>
-
-
-
-     <div id="contenu-panier">
-      <img src="../img/panier-dev.JPG">
-      <p>59,99€</p>
-     </div>
-    <div class="bouton-paiement">
-      <a class="btn btn-success btn-lg" href="#" role="button">Paiement</a>
-    </div>
+<section class="full-page">
+      <section class="top">
+            <div class="contenu">
+                  <h1>Qu'est-ce qu'un Développeur Web ?</h1>
+            </div>
+            <div class="contenu-article">
+              Le développeur web effectue la réalisation technique et le développement informatique d’un site web. A l’aide du cahier des charges réalisé par le chef de projet, le développeur web programme les fonctionnalités qui correspondent aux besoins du client pour son site web. Le développeur web peut exercer son métier dans une Société de Services en Ingénierie Informatique (SSII), dans une agence Web, en tant que travailleur indépendant ou directement chez le client. Certains développeurs web sont également bénévoles dans le cadre de projets liés à l’informatique libre. De nombreuses formations existent pour devenir développeur web. Vous pouvez effectuer des études assez courtes (bac+2) comme un BTS ou DUT en informatique. Vous pouvez aussi effectuer des études plus longues jusqu’au bac+5 tel que des Masters spécialisés dans l’informatique ou le web. De plus, des écoles spécialisées et les écoles privées peuvent être une bonne alternative pour accéder au métier de développeur web. Pour finir, le salaire d’un développeur web peut varier en fonction du nombre et de la complexité des langages maitrisés ainsi que ses années d’expériences. Le salaire d’un développeur web débutant varie entre 1500€ et 2500€ par mois. En revanche un développeur senior peut gagner jusqu’à 5000€ par mois.
+            </div>
+            <div>
+              <center><iframe width="1100" height="615" src="https://www.youtube.com/embed/6ALDzbxuk3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            </div>
+            
+      </section>
 
 
 </section>
@@ -193,7 +125,7 @@ jQuery(document).ready(function(){
            <div class="footer-contact-box">
             <div class="footer-contact-icon"><i class="fa fa-envelope"></i></div>
             <div class="footer-contact-text">
-              <p><a href="mailto:info@learningtutorialpoingt.com">info@learningtutorialpoingt.com</a></p>
+              <p><a href="mailto:info@learningtutorialpoingt.com">metiers-du-web@gmail.com</a></p>
             </div>
             <div class="clr"></div>
           </div>
@@ -201,7 +133,7 @@ jQuery(document).ready(function(){
            <div class="footer-contact-box">
             <div class="footer-contact-icon"><i class="fa fa-globe"></i></div>
             <div class="footer-contact-text">
-               <p><a href="http://www.learningtutorialpoint.com">metiers-du-web@gmail.com</a></p>
+               <p><a href="http://www.learningtutorialpoint.com">http://www.learningtutorialpoint.com</a></p>
             </div>
             <div class="clr"></div>
           </div>
@@ -223,7 +155,7 @@ jQuery(document).ready(function(){
             <div class="footer-heading"><h2>Quelques liens</h2></div>
             <div class="footer-link">
               <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="../index.html">Accueil</a></li>
                 <li><a href="blog.html">Articles</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="connexion.html">Connexion</a></li>
@@ -256,16 +188,16 @@ jQuery(document).ready(function(){
              <div class="footer-form">
                <form method="post" action="#">
                  <div class="footer-form-box">
-                   <input type="text" class="footer-form-style" placeholder="Nom">
+                   <input type="text" class="footer-form-style" placeholder="Name">
                  </div>
                  <div class="footer-form-box">
                    <input type="text" class="footer-form-style" placeholder="Email">
                  </div>
                  <div class="footer-form-box">
-                   <input type="text" class="footer-form-style" placeholder="Numero de telephone">
+                   <input type="text" class="footer-form-style" placeholder="Phone Number">
                  </div>
                  <div class="footer-form-box">
-                   <input type="submit" class="footer-form-submit-style" value="ENVOYER" ">
+                   <input type="submit" class="footer-form-submit-style" value="SUBMIT" ">
                  </div>
                </form>
              </div>
@@ -274,8 +206,10 @@ jQuery(document).ready(function(){
         </div>
       </div>
     </div>
+
   </div>
 </div>
+
 
 
 
