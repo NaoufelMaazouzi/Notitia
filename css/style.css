@@ -29,7 +29,8 @@ body {
   background-color: #e8e8e8;
 }
 
-img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]
+{
   display: none;
 }
 
@@ -82,9 +83,11 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 }
 
 .h2-center {
+  width: 100%;
   text-align: center;
   font-size: 45px;
   padding-top: 5%;
+  margin-bottom: 3%;
   font-family: Ubuntu;
   font-weight: bold;
 }
@@ -92,6 +95,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 #h2-center-video {
   text-align: center;
   font-size: 45px;
+  margin-bottom: 2%;
   /*margin-bottom: 50%;*/
   font-family: Ubuntu;
   font-weight: bold;
@@ -116,9 +120,11 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 }
 
 .h2-center-accueil {
+  width: 100%;
   text-align: center;
   font-size: 45px;
   padding-top: 5%;
+  margin-bottom: 5%;
   font-family: Ubuntu;
   font-weight: bold;
 }
@@ -227,19 +233,20 @@ nav.hidden {
   margin-top: 10%;
 }
 
-@media (max-width: 785px) {
-  #h2-interview {
-    font-size: 15px;
+@media (max-width: 688px) {
+  #div-svg-accueil,
+  #div-svg-audiovisuel,
+  #div-svg-web {
+    display: none;
   }
-  #h1-center {
-    font-size: 30px !important;
+  .texte-info,
+  .texte-info-metiers {
+    width: 80% !important;
+    padding-bottom: 5%;
   }
-  .fiche-metier {
-    width: 95%;
-    height: 100%;
-  }
-  .pitch {
-    width: 80vw !important;
+  .footer-wrapper-article,
+  .footer-wrapper-comm {
+    margin-top: 15% !important;
   }
 }
 
@@ -345,6 +352,29 @@ nav ul li a:hover {
   .icone-menu {
     display: block;
   }
+
+  .texte-info,
+  .texte-info-metiers {
+    font-size: 13px !important;
+  }
+
+  #h2-interview {
+    font-size: 15px;
+  }
+  #h1-center {
+    font-size: 30px !important;
+  }
+  .fiche-metier {
+    width: 95%;
+    height: 100%;
+  }
+  .pitch {
+    width: 80vw !important;
+  }
+  .footer-wrapper-article,
+  .footer-wrapper-comm {
+    margin-top: 55% !important;
+  }
 }
 
 .top {
@@ -353,12 +383,11 @@ nav ul li a:hover {
   height: 1000px;
   display: block;
   margin: 0 auto;
-  background: #f3f3f3;
+  /*background: #f3f3f3;*/
 }
 
 section.top article {
   height: 300px;
-  background: ;
   float: left;
   border-radius: 4px;
   overflow: hidden;
@@ -585,17 +614,6 @@ article h1 {
   padding-top: 5%;
 }
 
-.texte-info {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1%;
-  padding-bottom: 5%;
-  text-align: justify;
-  font-family: "Lato";
-  font-size: 21px;
-}
-
 .me-contacter {
   padding-top: 61;
 }
@@ -643,6 +661,22 @@ body {
   background: black;
 }
 
+.footer-wrapper-comm {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  margin: auto;
+  background-image: url(footer-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100%;
+  background: black;
+}
+
 .footer-wrapper-interview {
   width: 100%;
   height: auto;
@@ -671,7 +705,7 @@ body {
   background-size: cover;
   overflow: hidden;
   position: relative;
-  margin-top: 70%;
+  margin-top: 100%;
   background: black;
 }
 
@@ -780,6 +814,7 @@ body {
   height: auto;
   margin: auto;
   padding: 20px 20px;
+  text-align: center;
 }
 .footer-section-three {
   width: 100%;
@@ -885,6 +920,7 @@ body {
   height: auto;
   margin: auto;
   margin-top: 20px;
+  text-align: center;
 }
 .footer-form-style {
   width: 100%;
@@ -944,9 +980,20 @@ h1 span {
 }
 /*RESPONSIVE CODE*/
 @media only screen and (max-width: 1199px) {
+  .texte-info {
+    font-size: 16px !important;
+  }
+  .texte-info-metiers {
+    font-size: 19px !important;
+    margin-top: 2% !important;
+  }
   .footer-wrapper {
     position: relative;
     background-attachment: scroll;
+  }
+  .footer-wrapper-article,
+  .footer-wrapper-comm {
+    margin-top: 65% !important;
   }
   h1 {
     font-size: 4vw !important;
@@ -1242,7 +1289,10 @@ hr {
 
 @media screen and (max-width: 767px) {
   .texte-info {
-    font-size: 13px;
+    font-size: 13px !important;
+  }
+  .texte-info-metiers {
+    font-size: 15px !important;
   }
   .h2-center-accueil {
     font-size: 25px;
@@ -1259,6 +1309,10 @@ hr {
   }
   .metiers {
     width: 50%;
+  }
+  .footer-wrapper-article,
+  .footer-wrapper-comm {
+    margin-top: 40% !important;
   }
 }
 
@@ -1324,3 +1378,139 @@ input[type=submit] {
     margin-top: 0;
   }
 } */
+
+#div-svg-accueil {
+  border: none;
+  width: 40%;
+  height: 30%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+#div-svg-accueil img {
+  width: 100%;
+  height: auto;
+  stroke: none;
+  stroke-width: 0%;
+}
+
+#div-svg-web {
+  border: none;
+  width: 40%;
+  height: 30%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#div-svg-web img {
+  width: 100%;
+  height: auto;
+  stroke: none;
+  stroke-width: 0%;
+}
+
+#div-svg-comm {
+  border: none;
+  width: 40%;
+  height: 30%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#div-svg-comm img {
+  width: 100%;
+  height: auto;
+  stroke: none;
+  stroke-width: 0%;
+}
+
+#div-svg-audiovisuel {
+  border: none;
+  width: 40%;
+  height: 30%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#div-svg-audiovisuel img {
+  width: 100%;
+  height: auto;
+  stroke: none;
+  stroke-width: 0%;
+}
+
+.content2 {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content-index {
+  background-color: #e7ebff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.texte-info {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Lato";
+  font-size: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.texte-info-metiers {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Lato";
+  font-size: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#div-video {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #e7ebff;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.div-fiche-metier {
+  width: 100%;
+  text-align: center;
+  margin-top: -5%;
+}
+
+input[type="submit"] {
+  background-color: #827ffe;
+  border-radius: 100px;
+  height: 62px;
+  width: 150px;
+  border: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #403866;
+  border-radius: 100px;
+  height: 62px;
+  width: 200px;
+  border: none;
+  transition: all 0.3s;
+  color: white;
+}

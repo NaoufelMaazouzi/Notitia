@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Webeo et les métiers du web | Développeur web</title>
+  <title>Notitia | Fiche métier</title>
   <meta name="description"
     content="Bienvenue sur le site qui vous aidera à choisir votre métier du web ! Vous retrouverez ici l'article sur les développeurs web.">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Nunito:400,700&display=swap" rel="stylesheet">
   <meta name="keywords" lang="fr"
     content="metiers, web, formations, Webeo, developpeur, graphiste, integrateur, designer">
-  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="icon" type="image/png" href="../img/logo_notitia.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
@@ -19,12 +19,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway|Roboto+Slab&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
-<body class="body2">
+<body class="body">
   <div class="wrapper">
-    <header class="header2">
+    <header class="header1">
 
       <nav>
 
@@ -34,73 +35,59 @@
 
         <div class="logo">
 
-          <a href="index.html"><img src="../img/logo.png" style="width: 10%;"></a>
+          <a href="../index.html"><img src="../img/logo_notitia.png" class="img-responsive"></a>
         </div>
 
         <div class="menu">
           <ul>
             <li><a href="../index.html">Accueil</a></li>
-            <li><a href="blog.html">Articles</a></li>
-            <li><a href="interviews.html">Contact</a></li>
-            <li><a href="connexion.html">Connexion</a></li>
-            <a href="panier.html" <i class="fas fa-shopping-bag" text-decoration="none"></i></a>
+            <li><a href="blog.html">Choisir un métier</a></li>
+            <li><a href="interviews.html">Interviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
   </div>
 
-  <script type="text/javascript">
-
-    // Menu-toggle button
-
-    $(document).ready(function () {
-      $(".icone-menu").on("click", function () {
-        $("nav ul").toggleClass("showing");
-      });
-    });
-
-    // Scrolling Effect
-
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-      }
-
-      else {
-        $('nav').removeClass('black');
-      }
-    })
-  </script>
 
 
-  <section class="section-connexion">
+  <section class="full-page">
+    <section class="top">
+      <div class="content2">
+        <h1 class="h2-center">Qu'est-ce qu'un Infographiste ?</h1>
 
-    <div class="titre-connexion">
-      <b>CONNEXION</b>
-      <span>WEBEO</span>
-    </div>
-    <section>
-      <form method="post" action="">
-        <div class="login">
-          <center>
-            <div class="div-utilisateur">Utilisateur</div>
-          </center>
-          <hr class="hr-connexion">
-          <input class="giris" type="text" name="Identifiant" placeholder="Identifiant">
-          <input class="giris" type="password" name="mdp" placeholder="Mot de passe">
-          <a href="../index.html" target="blank"><input class="butonlogin" type="submit" name="" value="Connexion"></a>
-          <a href="inscription.html" class="pas-encore-inscrit">Pas encore inscrit ?</a>
+        <div id="div-svg-audiovisuel">
+          <img src="../img/ill2.svg" />
         </div>
-      </form>
+        <p class="texte-info-metiers">
+          Munissez-vous de vos crayons, vos feutres et votre carnet de croquis pour découvrir le métier d’infographiste.
+          Or, ce dernier ne se résume pas à crayonner des croquis en tout genre, il faut avant tout de la créativité !
+          Toutes les définitions du monde n’arriveraient pas à vous expliquer tous les enjeux et défis qu’implique ce
+          métier. Laissons alors la place à Olivier Nonis qui nous a fait l’honneur de participer à notre projet et à
+          répondre à nos questions.
+        </p>
+      </div>
+      <div id="div-video">
+        <div class="video-container2">
+          <center><iframe width="560" height="315" src="https://www.youtube.com/embed/8EdDQEpNWEc" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+        </div>
+      </div>
+      <div class="div-fiche-metier">
+        <a href="fiche-metier-infographiste.html" target="_blank"><img class="fiche-metier"
+            src="../img/capt2-min.png"></a>
+      </div>
+
     </section>
   </section>
 
-  <div class="footer-wrapper">
+
+  <!--******************** footer ********************-->
+  <div class="footer-wrapper-article">
     <div class="top-img"></div>
     <div class="container-fluid">
-
-
       <div class="footer-mid-part">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12">
@@ -109,50 +96,51 @@
                 <h2>Nous contacter</h2>
               </div>
               <div class="footer-contact-box">
-                <div class="footer-contact-icon"><i class="fa fa-map-marker"></i></div>
+                <div class="footer-contact-icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
                 <div class="footer-contact-text">
                   <p>Adresse: 77100, Meaux, France</p>
                 </div>
                 <div class="clr"></div>
               </div>
-
               <div class="footer-contact-box">
-                <div class="footer-contact-icon"><i class="fa fa-phone"></i></div>
+                <div class="footer-contact-icon">
+                  <i class="fa fa-phone"></i>
+                </div>
                 <div class="footer-contact-text">
                   <p><a href="tel:+012-3456-789">06 26 45 13 25</a></p>
                 </div>
                 <div class="clr"></div>
               </div>
-
-
-
               <div class="footer-contact-box">
-                <div class="footer-contact-icon"><i class="fa fa-envelope"></i></div>
+                <div class="footer-contact-icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
                 <div class="footer-contact-text">
-                  <p><a href="mailto:info@learningtutorialpoingt.com">metiers-du-web@gmail.com</a></p>
+                  <p><a href="mailto:naoufel.maazouzi@live.fr">notitia@gmail.com</a></p>
                 </div>
                 <div class="clr"></div>
               </div>
-
               <div class="footer-contact-box">
-                <div class="footer-contact-icon"><i class="fa fa-globe"></i></div>
+                <div class="footer-contact-icon">
+                  <i class="fa fa-globe"></i>
+                </div>
                 <div class="footer-contact-text">
-                  <p><a href="http://www.learningtutorialpoint.com">http://www.learningtutorialpoint.com</a></p>
+                  <p><a href="https://notitia.000webhostapp.com/">Notitia</a></p>
                 </div>
                 <div class="clr"></div>
               </div>
-
               <div class="footer-contact-box">
-                <div class="footer-contact-icon"><i class="fa fa-globe"></i></div>
+                <div class="footer-contact-icon">
+                  <i class="fa fa-globe"></i>
+                </div>
                 <div class="footer-contact-text">
-                  <p><a href="http://www.learningtutorialpoint.com">http://www.learningtutorialpoint.com</a></p>
+                  <p><a href="https://notitia.000webhostapp.com/">Notitia</a></p>
                 </div>
                 <div class="clr"></div>
               </div>
-
-
             </div>
-
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="footer-section-two">
@@ -162,13 +150,15 @@
               <div class="footer-link">
                 <ul>
                   <li><a href="../index.html">Accueil</a></li>
-                  <li><a href="blog.html">Articles</a></li>
-                  <li><a href="interviews.html">Contact</a></li>
-                  <li><a href="connexion.html">Connexion</a></li>
+                  <li><a href="blog.html">Métiers</a></li>
+                  <li><a href="interviews.html">Interviews</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <p class="pitch">Ce site internet permet aux jeunes étudiants de découvrir les métiers du WEB et de
-                  demain ! Vous pourrez y retrouver des formations, des articles ainsi que des vidéos sur les métiers
-                  qui vous interresent !</p>
+                <p class="pitch">Ce site internet permet aux jeunes étudiants de découvrir les métiers
+                  du WEB et de
+                  demain ! Vous pourrez y retrouver des formations, des articles ainsi que des vidéos
+                  sur les métiers
+                  qui vous intéressent !</p>
               </div>
             </div>
           </div>
@@ -178,31 +168,21 @@
                 <h2>Nous suivre</h2>
               </div>
               <div class="footer-link-icons">
-                <a href="https://twitter.com/" class="twitter" target="blank"><i
-                    class="fab fa-twitter fa-lg white-text  mr-3 fa-2x"></i></a>
-                <a href="https://fr-fr.facebook.com/" class="facebook" target="blank"><i
+                <a href="https://www.facebook.com/notitia.projet" class="facebook" target="blank"><i
                     class="fab fa-facebook-f fa-lg white-text mr-3 fa-2x"></i></a>
-                <a href="https://www.instagram.com/?hl=fr" class="instagram" target="blank"><i
-                    class="fab fa-instagram fa-lg white-text  mr-3 fa-2x"></i></a>
-                <a href="https://www.google.fr/" class="google" target="blank"><i
-                    class="fab fa-google fa-lg white-text  mr-3 fa-2x"></i></a>
-                <a href="https://www.linkedin.com/" class="linkedin" target="blank"><i
-                    class="fab fa-linkedin-in fa-lg white-text  mr-3 fa-2x"></i></a>
+                <a href="https://www.instagram.com/notitia_projet?igshid=159kovfvvfuao" class="instagram"
+                  target="blank"><i class="fab fa-instagram fa-lg white-text  mr-3 fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UCVodqhcUxraqgND74cKe8Xw?pbjreload=10" class="google"
+                  target="blank"><i class="fab fa-youtube fa-lg white-text mr-3 fa-2x"></i></a>
                 <section>
-                  <div class="loader">
-                    <a href="loader.html">
-                      <div class="loader-active"></div>
-                    </a>
-                  </div>
                 </section>
-
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="footer-section-three">
               <div class="footer-heading">
-                <h2>Prenedre contact</h2>
+                <h2>Prendre contact</h2>
               </div>
               <div class="footer-form">
                 <form method="POST" action="../php/contact-form-handle-footer.php">
@@ -223,7 +203,6 @@
                   </div>
                 </form>
               </div>
-
             </div>
           </div>
         </div>
@@ -235,14 +214,16 @@
   <script type="text/javascript" src="../js/script.js"></script>
 
   <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="../js/script-metiers.js"></script>
 
 
 </body>
